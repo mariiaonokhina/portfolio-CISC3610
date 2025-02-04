@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-content-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3f6f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+hr {
+    color: #272343;
+    width: 100%;
+}
+
+.homepage-content-card {
+    height: 55vh;
+    width: fit-content;
+    background-color: #fffffe;
+    padding: 5vw;
+    border-radius: 20px;
+    border: 5px solid #272343;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #272343;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #272343;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #272343;
+}
+
+h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #272343;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2d334a;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li {
+    margin-bottom: 2vh;
+}
+
+.list-item a {
+    color: #2d334a;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.aboutme-website-container {
+    background-color: #fffffe;
+    border: 5vw outset #bae8e8;
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme-inner-container {
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.about-me-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.about-me-title {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3vh;
+}
+
+.about-me-info-container p {
+    width: 65vw;
+    margin-top: 3vh;
+}

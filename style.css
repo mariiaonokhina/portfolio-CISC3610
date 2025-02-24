@@ -92,7 +92,8 @@ li {
     border: 5vw outset #bae8e8;
     height: 82vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
 }
 
 .aboutme-inner-container {
@@ -119,4 +120,24 @@ li {
 .about-me-info-container p {
     width: 65vw;
     margin-top: 3vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.projects-container {
+    margin-top: 2vh;
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 24px;
+    text-align: center;
+}
+
+li {
+    text-decoration: none;
+    padding: 5px;
 }

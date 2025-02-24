@@ -1,6 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = async function () {
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
+
+    setTimeout(() => {
+      location.reload();
+    }, 5000)
 
     const skyBackground = new Image();
     skyBackground.src = "assets/sky.jpg";
@@ -43,4 +47,4 @@ document.addEventListener("DOMContentLoaded", function () {
       ctx.textAlign = "center"; // Text alignment
       ctx.fillText("Soaring above the clouds...", 300, canvas.height - 50); // Position
     };
-});
+};

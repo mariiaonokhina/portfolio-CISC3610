@@ -2,10 +2,6 @@ window.onload = async function () {
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
 
-    setTimeout(() => {
-      location.reload();
-    }, 5000)
-
     const skyBackground = new Image();
     skyBackground.src = "assets/sky.jpg";
 
@@ -16,7 +12,7 @@ window.onload = async function () {
       airBalloon1.src = "assets/airBalloon1.png";
 
       airBalloon1.onload  = function() {
-        ctx.drawImage(airBalloon1, 400, 200, 150, 200);
+        ctx.drawImage(airBalloon1, 200, 100, 150, 200);
       };
 
       const airBalloon2 = new Image();
@@ -24,13 +20,6 @@ window.onload = async function () {
 
       airBalloon2.onload  = function() {
         ctx.drawImage(airBalloon2, 800, 200, 200, 200);
-      };
-
-      const airBalloon3 = new Image();
-      airBalloon3.src = "assets/airballoon3.png";
-
-      airBalloon3.onload  = function() {
-        ctx.drawImage(airBalloon3, 0, 0, 150, 200);
       };
 
       const airplane = new Image();

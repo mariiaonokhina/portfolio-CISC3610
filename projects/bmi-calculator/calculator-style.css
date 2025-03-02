@@ -1,0 +1,331 @@
+/* Google Font */
+/* font-family: 'IBM Plex Sans', sans-serif FOR Headings;
+font-family: 'Montserrat', sans-serif; FOR Paragraphs*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+html {scroll-behavior: smooth;}
+
+#websiteContainer {
+
+    position: absolute;
+    background-color: #edc7b7;
+    height: fit-content;
+    width: 100vw;
+    color: #123c69;
+
+}
+
+#calculatorContainer, #infoContainer {
+
+    height: 100vh;
+    width: 90vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#calculatorDiv, #infoDiv {
+
+    /* background-color: cornflowerblue; */
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    padding: 20px;
+
+}
+
+/* Fonts for different text types */
+h1, h2 {font-family: 'IBM Plex Sans', sans-serif;}
+p, label, input {font-family: 'Montserrat', sans-serif;}
+
+/* Header on the very top */
+#headingDiv {
+
+    height: 4.5em;
+    width: 100%;
+
+}
+
+#mainHeading {
+
+    color: #ac3b61;
+    font-size: xxx-large;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+#calculatorDiv h1, h2 {
+
+    margin: 15px 0px;
+    text-align: center;
+    font-size: xxx-large;
+
+}
+
+#calculatorDiv p, label, input {
+
+    margin-top: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: large;
+
+}
+
+/* To make the inputs align at the center + to make them look appealing  */
+#calculatorDiv input {
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ac3b61;
+    background-color: #edc7b7;
+    color: #123c69;
+
+}
+
+#calculatorDiv input:focus {
+
+    outline: none;
+
+}
+
+/* Height and Weight switches styling */
+.feetOrCm, .poundsOrKg {
+
+    padding: 2px;
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #123c69;
+    background-color: #EDC7b7;
+    box-shadow: 2px 1px 0px;
+    position: relative;
+
+}
+
+.feetOrCm {left: 160px; top: -42px;}
+
+.poundsOrKg {left: 145px; top: -42px;}
+
+.feetOrCm:active, .poundsOrKg:active {
+
+    box-shadow: 1px 0px 0px;
+    transform: translate(2px, 1px);
+
+}
+
+.chooseSex {
+
+    font-family: 'Montserrat', sans-serif;
+    color: #123c69;
+    background-color: #EDC7b7;
+    font-size: large;
+    padding: 1px 5px;
+    width: 100px;
+    margin: 0px 20px 25px;
+    box-shadow: 4px 3px 0px;
+
+}
+
+.chooseSex:active {
+
+    box-shadow: 2px 1px 0px;
+    transform: translate(4px, 3px);
+
+}
+
+/* calculate button styling */
+#calculateButton {
+
+    position: relative;
+    top: -25px;
+    padding: 10px;
+    width: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 900;
+    color: #123c69;
+    background-color: #EDC7b7;
+    box-shadow: 4px 3px 0px;
+
+}
+
+#calculateButton:active {
+
+    box-shadow: 1px 1px 0px;
+    transform: translate(4px, 3px);
+
+}
+
+button:hover {
+
+    filter: brightness(105%);
+    cursor: pointer;
+
+}
+
+/* This class will be added and removed on click */
+.activeButton {
+
+    filter: brightness(90%);
+
+}
+
+#moreInfoLink {
+        
+    text-decoration: underline;
+    margin: 15px;
+    position: relative;
+    color: #123c69;
+    font-family: 'Montserrat', sans-serif;
+    left: 22%;
+    transform: translateX(-22%);
+
+}
+/* To emphasize important info with an accent color */
+#accentColor {
+
+    color: #ac3b61;
+    font-weight: 900;
+
+}
+
+#formulaDiv {display: flex;}
+
+.formulaImage {
+
+    margin: 0px 50px 15px;
+    position: relative;
+    left: 25%;
+    transform: translateY(10%);
+
+}
+
+.infoParagraph {
+
+    height: fit-content;
+    width: 85%;
+    font-size: x-large;
+    margin: 15px 10px;
+    display: inline;
+
+}
+
+#linkCDC{
+
+    text-decoration: underline;
+    margin: 15px;
+    position: relative;
+    width: 60px;
+    color: #123c69;
+    font-family: 'Montserrat', sans-serif;
+    left: 25%;
+    transform: translate(-25%);
+
+}
+
+#illustration {
+
+    position: relative;
+    width: 15%;
+    height: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+
+}
+
+#goUp {
+
+    text-decoration: underline;
+    margin: 15px;
+    position: relative;
+    width: 60px;
+    color: #123c69;
+    font-family: 'Montserrat', sans-serif;
+    left: 25%;
+    transform: translate(-25%);
+
+}
+
+#angleUpImage {
+
+    height: 3%;
+    width: 3%;
+    position: relative;
+    left: 8%;
+    top: 5em;
+    transform: translateX(-8%);
+}
+
+#linkCDC:hover, #moreInfoLink:hover, #goUp:hover {color: #ac3b61; cursor: pointer;}
+
+/* Animation for input fields on click */
+.inputField {
+    border: none;
+    outline: none;
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .inputField label {
+    color: #123c69;
+    opacity: 0.7;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    left: 300px;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .inputField.focus label {
+    color: #ac3b61;
+  }
+
+  .inputField.float label {
+    opacity: 1;
+    left: 135px;
+    transition: all 0.2s ease;
+    font-weight: bold;
+  }
+
+@media only screen and (max-width: 1200px) {
+
+    #websiteContainer {
+        
+        height: fit-content;
+        width: 100%;
+        position: relative;
+
+    }
+
+    
+
+};

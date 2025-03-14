@@ -28,7 +28,10 @@ div {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
+}
+
+.astronaut-movement-div label {
+    text-align: center;
 }
 
 h3 {
@@ -47,8 +50,14 @@ input, button {
     gap: 20px;
 }
 
+.trigger-sound-div {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
 .play-sound-btn {
-    margin: 5px;
     border-radius: 5px;
-    padding: 5px;
+    width: 100px;
+    padding: 3px;
 }

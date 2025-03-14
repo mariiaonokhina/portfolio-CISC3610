@@ -11,6 +11,15 @@
     <body>
         <canvas id="canvas" width="800" height="600"></canvas>
         <form>
+            <div class="astronaut-movement-div">
+                <h3>Move Astronaut:</h3>
+                <label for="sliderX">Left ↔ Right</label>
+                <input type="range" id="sliderX" min="0" max="600" value="50">
+                
+                <label for="sliderY">Up ↕ Down</label>
+                <input type="range" id="sliderY" min="0" max="400" value="50">
+            </div>
+
             <div class="background-selection-div">
                 <h3>Select background:</h3>
                 <div class="background-input">
@@ -35,7 +44,7 @@
 
                 <div class="item-input">
                     <input value="spaceship" type="checkbox" name="items">
-                    <label for="items">Alien Space Ship</label>
+                    <label for="items">UFO</label>
                 </div>
 
                 <div class="item-input">
@@ -43,9 +52,9 @@
                     <label for="items">Planet Earth</label>
                 </div>
             </div>
-            
+
+            <h3>Play sound:</h3>
             <div class="trigger-sound-div">
-                <h3>Play sound:</h3>
                 <button class="play-sound-btn" id="rocket-sound-btn">Rocket Sound</button>
                 <button class="play-sound-btn" id="laser-zap-btn">Laser Zap</button>
                 <button class="play-sound-btn" id="alien-chatter-btn">Alien Chatter</button>

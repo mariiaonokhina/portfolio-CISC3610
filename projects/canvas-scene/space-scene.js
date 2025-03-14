@@ -41,6 +41,15 @@ backgrounds['galaxy'].src = './assets/shot-by-cerqueira-0o_GEzyargo-unsplash.jpg
 
 let currentBackground = 'nasa';
 
+// Initialize sounds
+const sounds = {
+    rocket: new Audio('./assets/334280__aceofspadesproduc100__rocket-2.wav'),
+    laser: new Audio('./assets/480899__copyc4t__laser-zap.wav'),
+    ufo: new Audio('./assets/628760__atrainer16__alien-sounds.wav')
+};
+
+let currentSound = null;
+
 function drawScene() {
     const background = backgrounds[currentBackground];
 
@@ -98,6 +107,33 @@ sliderY.addEventListener('input', () => {
     astronautY = parseInt(sliderY.value);
     drawScene();
 });
+
+document.getElementById('rocket-sound-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    playSound('rocket');
+});
+
+document.getElementById('laser-zap-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    playSound('laser');
+});
+
+document.getElementById('alien-chatter-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    playSound('ufo');
+});
+
+function playSound(key) {
+    // Stop current sound if playing
+    if (currentSound && !currentSound.paused) {
+        currentSound.pause();
+        currentSound.currentTime = 0;
+    }
+
+    // Play new sound
+    currentSound = sounds[key];
+    currentSound.play();
+}
 
 // Draw the initial scene
 window.onload = () => {

@@ -5,7 +5,7 @@
 
 .homepage-content-container {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     background-color: #e3f6f5;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ hr {
 }
 
 .homepage-content-card {
-    height: 55vh;
+    height: fit-content;
     width: fit-content;
     background-color: #fffffe;
     padding: 5vw;
@@ -90,7 +90,7 @@ li {
 .aboutme-website-container {
     background-color: #fffffe;
     border: 5vw outset #bae8e8;
-    height: 82vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-content: center;

@@ -1,0 +1,16 @@
+.lifestyle-charts {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.chart-container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+  }  

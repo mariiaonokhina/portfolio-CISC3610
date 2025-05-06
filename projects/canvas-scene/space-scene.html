@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Space Scene</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="space-scene.css">
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <form>
+            <div class="astronaut-movement-div">
+                <h3>Move Astronaut:</h3>
+                <label for="sliderX">Left ↔ Right</label>
+                <input type="range" id="sliderX" min="0" max="600" value="50">
+                
+                <label for="sliderY">Up ↕ Down</label>
+                <input type="range" id="sliderY" min="0" max="400" value="50">
+            </div>
+
+            <div class="background-selection-div">
+                <h3>Select background:</h3>
+                <div class="background-input">
+                    <input type="radio" name="background" value="nasa">
+                    <label for="background">NASA</label>
+                </div>
+                <div class="background-input">
+                    <input type="radio" name="background" value="blue-purple">
+                    <label for="background">Blue/Purple</label>
+                </div>
+                <div class="background-input">
+                    <input type="radio" name="background" value="galaxy">
+                    <label for="background">Galaxy</label>
+                </div>
+
+            <div class="item-disappear-div">
+                <h3>Select items:</h3>
+                <div class="item-input">
+                    <input value="rocket" type="checkbox" name="items">
+                    <label for="items">Rocket</label>
+                </div>
+
+                <div class="item-input">
+                    <input value="spaceship" type="checkbox" name="items">
+                    <label for="items">UFO</label>
+                </div>
+
+                <div class="item-input">
+                    <input value="planet" type="checkbox" name="items">
+                    <label for="items">Planet Earth</label>
+                </div>
+            </div>
+
+            <h3>Play sound:</h3>
+            <div class="trigger-sound-div">
+                <button class="play-sound-btn" id="rocket-sound-btn">Rocket Sound</button>
+                <button class="play-sound-btn" id="laser-zap-btn">Laser Zap</button>
+                <button class="play-sound-btn" id="alien-chatter-btn">Alien Chatter</button>
+            </div>
+        </form>
+        <script src="space-scene.js" async defer></script>
+    </body>
+</html>

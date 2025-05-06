@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bird Song Explorer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bird-song.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="js/main.js" defer></script>
+  <style>
+    body { background-color: #f8f9fa; }
+    .feature-icon {
+      font-size: 3rem;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="home.html"><img src="/projects/bird-song-pwa/icons/icon.svg" width="35"/> BirdSongs</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="browse.html">Browse</a></li>
+          <li class="nav-item"><a class="nav-link" href="learn.html">Learn</a></li>
+          <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container text-center my-5">
+    <h1 class="display-4">Bird Song Explorer</h1>
+    <p class="lead">Learn to identify your favorite birds by sight and sound!</p>
+    <a href="browse.html" class="btn btn-primary btn-lg me-2">Get Started</a>
+    <button id="installBtn" class="btn btn-outline-primary btn-lg">Install App</button>
+  </header>  
+
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Why Bird Song Explorer?</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="feature-icon">🔎</div>
+        <h4>Browse Birds</h4>
+        <p>Explore a variety of birds with photos, descriptions, and authentic bird songs.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature-icon">🎮</div>
+        <h4>Interactive Learning</h4>
+        <p>Test your knowledge by identifying birds through sound or sight in Learn mode.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature-icon">⭐</div>
+        <h4>Favorites</h4>
+        <p>Save your favorite birds for quick access and practice anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-muted py-4">
+    <small>© 2025 Bird Song Explorer. Made by Mariia Onokhina.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker Registered'));
+    }
+    </script>    
+</body>
+</html>

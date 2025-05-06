@@ -1,0 +1,46 @@
+{
+  "birds": [
+    {
+      "id": 1,
+      "title": "American Robin",
+      "description": "The American Robin sports a bright orange-red chest and heralds spring with a cheerful, melodic song. It’s often the first bird to welcome dawn in parks and backyards across North America.",
+      "image": "images/robin.jpg",
+      "audio": "audio/robin.mp3"
+    },
+    {
+      "id": 2,
+      "title": "Northern Cardinal",
+      "description": "With its striking crimson plumage and clear, whistling song, the Northern Cardinal is a bold backyard visitor. Its melodious calls ring through winter woods and summer gardens alike.",
+      "image": "images/cardinal.jpg",
+      "audio": "audio/cardinal.mp3"
+    },
+    {
+      "id": 3,
+      "title": "Blue Jay",
+      "description": "Intelligent and vocal, the Blue Jay flaunts vivid blue feathers and loud “jay-jay” calls that echo through treetops. This clever corvid is known to mimic other birds and chase off predators with raucous chatter.",
+      "image": "images/bluejay.jpg",
+      "audio": "audio/bluejay.mp3"
+    },
+    {
+      "id": 4,
+      "title": "American Goldfinch",
+      "description": "The American Goldfinch is a flash of bright yellow in summer fields, singing a sweet, twittering melody. In winter it dons olive hues, but its cheerful song remains a favorite of birdwatchers.",
+      "image": "images/goldfinch.jpg",
+      "audio": "audio/goldfinch.mp3"
+    },
+    {
+      "id": 5,
+      "title": "Black-capped Chickadee",
+      "description": "Tiny but friendly, the Black-capped Chickadee delivers its signature “chick-a-dee-dee-dee” call with confident charm. These curious acrobats flit through branches in search of seeds and insects.",
+      "image": "images/chickadee.jpg",
+      "audio": "audio/chickadee.mp3"
+    },
+    {
+      "id": 6,
+      "title": "Mallard Duck",
+      "description": "The Mallard Duck is easily recognized by the male’s glossy green head and gentle, quacking calls. Found in ponds and lakes, it’s one of the most familiar and widespread duck species.",
+      "image": "images/mallard.jpg",
+      "audio": "audio/mallard.mp3"
+    }    
+  ]
+}

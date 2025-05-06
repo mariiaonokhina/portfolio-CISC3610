@@ -1,0 +1,42 @@
+/*=== Navbar Active Link ===*/
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff !important;
+  }
+  
+  /*=== Card Layout ===*/
+  .card {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .card-img-left {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.favorite-icon.filled {
+  color: #e74c3c;
+}
+
+.audio-btn.btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+  
+  /*=== Learn Page Canvas ===*/
+  #birdCanvas {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 400px;
+  }  

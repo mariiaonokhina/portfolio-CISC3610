@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <title>BMI Calculator</title>
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="calculator-style.css">
+        
+        <!-- Font Awesome Icons -->
+        <script src="https://use.fontawesome.com/18e6ede674.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="websiteContainer">
+        
+            <!-- 1st Section - calculator itself -->
+            <div id="calculatorContainer">
+
+                <div id="headingDiv">
+
+                    <h1 id="mainHeading">BMI Calculator</h1>
+
+                </div>
+
+                <div id="calculatorDiv">
+
+                    <h1>Body Mass Index (BMI)</h1>
+
+                    <h2 style="font-size: x-large;">Used to check if your weight is healthy based on your height.</>
+
+                    <!-- User Input Height -->
+                    <fieldset class="inputField" style="margin-top: 15px;">
+
+                        <label for="heightInput">Height</label>
+                        <input id="heightInput">
+
+                    </fieldset>
+
+                    <button class="feetOrCm" id="inHeight">inches</button>
+                    <button class="feetOrCm" id="cmHeight">cm</button>
+
+                    <br>
+
+                    <!-- User Input Weight -->
+                    <fieldset class="inputField">
+                        
+                        <label for="weightInput">Weight</label>
+                        <input id="weightInput">
+                    
+                    </fieldset>
+                    
+                    <button class="poundsOrKg" id="lbsWeight">lbs</button>
+                    <button class="poundsOrKg" id="kgWeight">kg</button>
+
+                    <br>
+
+                    <!-- User Input Sex (appears only if age < 20) -->
+                    <button class="chooseSex" id="male" hidden>Male</button>
+                    <button class="chooseSex" id="female" hidden>Female</button>
+
+                    <br>
+
+                    <button id="calculateButton">Calculate!</button>
+
+                    <h1 id="yourBMI">Your BMI IS: 
+                        <!-- Javascript will calculate and fill in these values based on response -->
+                        <span id="BMIvalue"></span>
+
+                        <span id="BMImeaning"></span>
+
+                    </h1>
+
+                    <!-- Link to the 2nd section -->
+                    <a id="moreInfoLink" href="#infoContainer" style="font-size: xx-large;">Want to know more?</a>
+
+                </div>
+
+            </div>
+
+            <!-- 2nd Section with all info -->
+            <div id="infoContainer">
+
+                <div id="infoDiv">
+
+                <!-- Formula for BMI (Both Imperic and Metric) -->
+                <h2 class="infoHeading">The formula for calculating Body Mass Index (BMI):</h2>
+
+                <!-- Switch imperial and metric formulas -->
+                <div id="formulaDiv">
+
+                    <img class="formulaImage" id="metricFormula" src="BMI_Formula_Metric.svg" style="height: 15%; width: 15%">
+                    <img class="formulaImage" id="imperialFormula" src="BMI_Formula_Imperial.svg" style="height: 20%; width: 20%">
+                
+                </div>
+
+                <p class="infoParagraph">A high BMI can indicate high body fatness, however, it <span id="accentColor">does not</span> diagnose the body fatness or health of an individual.</p>
+
+                <h2 class="infoHeading">BMI for Children and Teens</h2>
+
+                <p class="infoParagraph">For children and teens, BMI is <span id="accentColor">age- and sex-specific</span> and is often referred to as BMI-for-age. The BMI value is calculated with the same formula, but interpreted differently.</p>
+
+                <br><br>
+                <!-- Link to CDC Website explaining difference between Adult and Child BMI -->
+                <a class="infoParagraph" id="linkCDC" href="https://www.cdc.gov/healthyweight/assessing/bmi/childrens_bmi/about_childrens_bmi.html">Official CDC Website about Teen and Child BMI.</a>
+
+                <br>
+
+                <img id="illustration" src="undrawFriendsImage.svg">
+                <a href="#calculatorContainer" id="goUp"><img id="angleUpImage" src="angleUpImage.svg"></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- External script -->
+        <script src="calculator-script.js"></script>
+
+    </body>
+
+</html>
